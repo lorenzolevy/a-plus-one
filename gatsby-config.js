@@ -12,12 +12,12 @@ module.exports = {
   plugins: [
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: "UA-154361842-2",
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-google-analytics`,
+    //   options: {
+    //     trackingId: "UA-154361842-2",
+    //   },
+    // },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -40,7 +40,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
+        name: `A-Plus One Inc.`,
         short_name: `starter`,
         start_url: `/`,
         background_color: `#040825`,
@@ -52,13 +52,5 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     `gatsby-plugin-offline`,
-    {
-      resolve: `gatsby-source-graphql`,
-      options: {
-        fieldName: `wpcontent`,
-        typeName: `WPGraphQL`,
-        url: `https://wpselah.chaiselevy.com/graphql`,
-      },
-    },
   ],
 }

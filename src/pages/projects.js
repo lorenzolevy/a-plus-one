@@ -1,8 +1,7 @@
 import React from "react"
-import Layout from "../layouts/layout"
+import Layout from "../Layouts/Layout"
 import SEO from "../components/seo"
 import Gallery from "../components/gallery"
-import { graphql } from "gatsby"
 import styled from "styled-components"
 import BgImg from "gatsby-background-image"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -95,33 +94,5 @@ const ProjectsPage = ({ data }) => {
     </Layout>
   )
 }
-
-export const query = graphql`
-  {
-    wpcontent {
-      projects {
-        nodes {
-          projectFields {
-            description
-            title
-            gallery {
-              sourceUrl
-            }
-            image {
-              sourceUrl
-              imageFile {
-                childImageSharp {
-                  fluid(maxWidth: 900) {
-                    ...GatsbyImageSharpFluid
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-`
 
 export default ProjectsPage

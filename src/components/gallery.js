@@ -92,13 +92,13 @@ export default class Gallery extends Component {
   render() {
     const { data } = this.props
     const { showLightbox, imageIndex, listIndex } = this.state
-    const galsList = data.wpcontent.projects.nodes.map(node =>
-      node.projectFields.gallery.map(url => url.sourceUrl)
+    const galsList = data?.wpcontent?.projects?.nodes?.map(node =>
+      node.projectFields?.gallery?.map(url => url)
     )
     return (
       <Fragment>
         <Grid>
-          {data.wpcontent.projects.nodes.map((node, index) => (
+          {!!data && data.length > 0 && data.map((node, index) => (
             <CardWrap
               key={node.projectFields.title}
               onClick={() =>

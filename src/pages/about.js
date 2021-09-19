@@ -1,5 +1,5 @@
 import React from "react"
-import Layout from "../layouts/layout"
+import Layout from "../Layouts/Layout"
 import SEO from "../components/seo"
 import BgImg from "gatsby-background-image"
 import { graphql } from "gatsby"
@@ -102,9 +102,7 @@ const ServicesContentWrap = styled(ContentWrap)`
     @media(max-width: 780px){
       font-size: 1.8rem;
     }
-    
   }
-
     > p {
       font-size: 1rem;
       font-family: Roboto;
@@ -114,8 +112,6 @@ const ServicesContentWrap = styled(ContentWrap)`
       color: hsla(210,73%,95%,.8);
       padding: 0;
     }
-
-
 `
 
 

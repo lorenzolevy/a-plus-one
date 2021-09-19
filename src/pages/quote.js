@@ -1,7 +1,7 @@
 import React from "react"
 
 import QuoteForm from "../components/quote-form"
-import Layout from "../layouts/layout"
+import Layout from "../Layouts/Layout"
 import SEO from "../components/seo"
 
 const QuotePage = () => (

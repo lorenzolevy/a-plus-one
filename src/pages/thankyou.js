@@ -1,5 +1,5 @@
 import React from "react"
-import Layout from "../layouts/layout"
+import Layout from "../Layouts/Layout"
 import SEO from "../components/seo"
 import { graphql, StaticQuery, Link } from 'gatsby'
 import BgImage from 'gatsby-background-image'

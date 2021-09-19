@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql, StaticQuery, Link } from "gatsby"
+import { Link } from "gatsby"
 import BgImage from "gatsby-background-image"
 import styled from "styled-components"
 
@@ -73,58 +73,27 @@ const HeroTitle = styled.h1`
   }
 `
 
-const HeroSection = () => (
-  <StaticQuery
-    query={graphql`
-      {
-        wpcontent {
-          flex(id: "ZmxleDo3Mw==") {
-            flexFields {
-              buttontext
-              descriptiontext
-              fieldGroupName
-              titletext
-              hero {
-                sourceUrl
-                imageFile {
-                  childImageSharp {
-                    fluid(maxWidth: 1800) {
-                      ...GatsbyImageSharpFluid
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    `}
-    render={data => {
-      const imageData =
-        data.wpcontent.flex.flexFields.hero.imageFile.childImageSharp.fluid
+const HeroSection = () => {
       return (
         <StyledHero
           tag="section"
           fluid={[
-            `linear-gradient(to right, rgba(65, 82, 98, 0.8),rgba(65, 82, 98, 0.1))`,
-            imageData,
+            `linear-gradient(to right, rgba(65, 82, 98, 0.8),rgba(65, 82, 98, 0.1))`
           ]}
         >
           <ContentWrap>
-            <HeroTitle>{data.wpcontent.flex.flexFields.titletext}</HeroTitle>
+            <HeroTitle>{'hero text'}</HeroTitle>
             <div>
-              <p>{data.wpcontent.flex.flexFields.descriptiontext}</p>
+              <p>{'description text'}</p>
               <Link to="/quote">
                 <PrimaryButton>
-                  {data.wpcontent.flex.flexFields.buttontext}
+                  {''}
                 </PrimaryButton>
               </Link>
             </div>
           </ContentWrap>
         </StyledHero>
       )
-    }}
-  />
-)
+  }
 
 export default HeroSection

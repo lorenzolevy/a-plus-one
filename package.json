@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "a-plus-one",
   "private": true,
-  "description": "A gatsby starter to express the business value of Selah Roofing",
+  "description": "A gatsby website to express the business value of ",
   "version": "0.0.1",
   "author": "Lorenzo Levy <lorenzoroccolevy@gmail.com>",
   "dependencies": {
@@ -22,7 +22,6 @@
     "gatsby-plugin-sharp": "^2.5.3",
     "gatsby-plugin-styled-components": "^3.3.1",
     "gatsby-source-filesystem": "^2.2.2",
-    "gatsby-source-graphql": "^2.5.2",
     "gatsby-transformer-sharp": "^2.4.3",
     "html-react-parser": "^0.10.3",
     "innertext": "^1.0.3",
