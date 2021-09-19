@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `A-Plus One Inc`,
-    description: `Serving the Los Angeles, CA area, Selah Roofing is a roofing contractor committed to excellence. We provide our customers with affordable residential roofing, commercial roofing, and rain gutters, and can help you finish new construction or property remodeling in no time at all.`,
+    description: `Serving the Los Angeles, CA area, A-Plus One Inc is a roofing contractor committed to excellence. We provide our customers with affordable residential roofing, commercial roofing, and rain gutters, and can help you finish new construction or property remodeling in no time at all.`,
     author: `@lorenzolevy`,
     url: "https://aplusoneroofing.com",
     image:
@@ -49,8 +49,6 @@ module.exports = {
         icon: `src/images/selah-icon.png`, // This path is relative to the root of the site.
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
     `gatsby-plugin-offline`,
   ],
 }
