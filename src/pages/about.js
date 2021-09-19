@@ -69,7 +69,7 @@ const AboutPage = ({ data }) => {
         heroPadding="2rem 0" 
         gradient={`linear-gradient(hsla(216, 63%, 22%, 0.7),hsla(216, 63%, 22%, 0.2))`} 
         heroTitle="Protecting Your Homes and Businesses From Weathering." 
-        descriptionText="See More Of Our Work." 
+        descriptionText="TRUSTED ROOFERS SUPPORTED BY OVER 100 YEARS OF SENIOR MANAGEMENT EXPERIENCE IN THE LOS ANGELES AREA." 
       />
       <RowBlock blocks={blocks} />
     </Layout>
