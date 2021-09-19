@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Selah Roofing`,
+    title: `A-Plus One Inc`,
     description: `Serving the Los Angeles, CA area, Selah Roofing is a roofing contractor committed to excellence. We provide our customers with affordable residential roofing, commercial roofing, and rain gutters, and can help you finish new construction or property remodeling in no time at all.`,
     author: `@lorenzolevy`,
-    url: "https://selahroofingcorp.com",
+    url: "https://aplusoneroofing.com",
     image:
       "https://wpselah.chaiselevy.com/wp-content/uploads/2020/05/brown-and-gray-painted-house-in-front-of-road-1396122-scaled.jpg",
     keywords:

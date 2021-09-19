@@ -37,9 +37,3 @@ export const ContactItemWrap = styled.div`
     }
   }
 `
-
-export const Icon = styled(FontAwesomeIcon)`
-  padding: 0.1rem;
-  font-size: 1.8rem;
-  color: hsla(210, 73%, 95%, 0.9);
-`

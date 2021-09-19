@@ -1,5 +1,6 @@
 import React from "react"
-import { Wrapper, ContactItemWrap, Icon } from "./Contacts.styles" 
+import { Wrapper, ContactItemWrap } from "./Contacts.styles" 
+import Icon from "../../../../primitives/Icon"
 
 const Contacts = () => (
   <>
