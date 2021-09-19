@@ -10,6 +10,7 @@ import {
   Icon 
 } from "./GlobalHead.styles"
 
+import { navItems } from './Constants.js' 
 
 const GlobalHead = ({ siteTitle }) => (
   <StyledHeader>
@@ -18,24 +19,16 @@ const GlobalHead = ({ siteTitle }) => (
     </StyledLink>
     <input type="checkbox" id="res-menu" />
     <NavMenu id="navigation">
-      <StyledLink to="/" activeStyle={activeStyles}>
-        Home
-      </StyledLink>
-      <StyledLink to="/about" activeStyle={activeStyles}>
-        About
-      </StyledLink>
-      <StyledLink to="/quote" activeStyle={activeStyles}>
-        Contact
-      </StyledLink>
-      <StyledLink to="/projects" activeStyle={activeStyles}>
-        Projects
-      </StyledLink>
+      {!!navItems && navItems.length > 0 && navItems.map(({ to, text }, index) => (
+        <StyledLink key={`header-nav-item-${index}`} to={to} activeStyle={activeStyles}>
+          {text}
+        </StyledLink>
+      ))}
     </NavMenu>
-
     <CallWrap>
       <a
         title="Click to call Selah Roofing"
-        style={{ textDecoration: `none` }}
+        style={{ textDecoration: "none" }}
         href="tel:1-323-870-7086"
       >
         <div>
@@ -45,7 +38,6 @@ const GlobalHead = ({ siteTitle }) => (
         </div>
       </a>
     </CallWrap>
-
     <label htmlFor="res-menu">
       <Icon icon={["fas", "bars"]} id="sign-one" />
       <Icon icon={["fas", "times"]} id="sign-two" />

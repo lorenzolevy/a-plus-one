@@ -55,6 +55,7 @@ export const StyledLink = styled(Link)`
   font-family: Roboto !important;
   letter-spacing: 0.06rem;
 `
+
 export const StyledHeader = styled.header`
   background-color: hsla(210, 20%, 25%, 0.98);
   display: flex;
@@ -64,6 +65,7 @@ export const StyledHeader = styled.header`
   top: 0;
   z-index: 100;
 `
+
 export const Title = styled.div`
   margin: 0;
   font-weight: 800;
@@ -77,6 +79,7 @@ export const Title = styled.div`
     color: rgba(128, 193, 255, 0.98);
   }
 `
+
 export const NavMenu = styled.nav`
   margin-left: 1.4rem;
   display: flex;
