@@ -2,9 +2,9 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
-import GlobalFooter from "../components/GlobalFooter"
-import GlobalHead from "../components/GlobalHead"
-import "../styles/layout.css"
+import GlobalFooter from "../GlobalFooter"
+import GlobalHead from "../GlobalHead"
+import "../../styles/layout.css"
 import { Container, Content } from "./Layout.styles"
 
 import '@fortawesome/fontawesome-svg-core/styles.css';
